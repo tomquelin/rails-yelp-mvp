@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-3">
+      <h1><%= @restaurant.name %></h1>
+      <p><%= @restaurant.category %></p>
+      <p><%= @restaurant.address %></p>
+      <p><%= @restaurant.phone_number %></p>
+      <%= link_to restaurants_path do %>
+        <i class="fa fa-arrow-left"></i> back
+      <% end %>
+      <%= link_to new_restaurant_review_path(@restaurant) do %>
+        <i class="fa-arrow-right fa"></i> add a review
+      <% end %>
+    </div>
+  </div>
+</div>
